@@ -1,3 +1,5 @@
+Recent Update: I collected 400 observations for notes C4, D4, E4, and also doing nothing. The random forest model fitted (just to test predictability) is able to achieve 73% accuracy! Notes D4 and E4 seem to be hard to distinguish, this could be because recording it was also difficult.
+
 # MusicGen_BCI
 This repository is used for my personal brain computer interface (BCI) mini-project. As of now, the project is still on-going. This README file will be updated as relevant information comes in.
 
@@ -19,9 +21,11 @@ As of now, I have created the Data Collection script, which will allow you to re
 3. The script records for 2 seconds, then goes to the next iteration.
 4. This is repeated for the number of iterations set. 
 
-Note: Step 2 has a 2 second timer before startnig to record, this is used as "rest time" for the user to prevent mental fatigue and also allow for blinking.
+Note: Step 2 has a 2 second timer before starting to record, this is used as "rest time" for the user to prevent mental fatigue and also allow for blinking.
 
-Now that the data collection is handled, I will have to work on creating a function/workflow to process the collected data into useful features. After that, it will be time to start some deep learning!
+Now that the data collection is handled, I have also worked on developing a workflow for the data. After receiving the data recording, a copy is made, which gets denoised. After that, the power spectral density for each wave category (alpha, beta, gamma, etc.) gets extracted into features. Since we have 4 useful EEG channels, we will have a total of 20 features! By simply fitting a random forest model, we were able to achieve 73% accuracy! Looking at the errors, this is most likely caused by the lack of clarity when recording notes D4 and E4 (I may have switched the two around / couldn't think of the note clearly so it might've sounded like the other).
+
+
 
 ## Hardware Used
 1. Muse2
