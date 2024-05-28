@@ -1,7 +1,9 @@
+UPDATE: This repository is being revamped, as this will now be a general page of my BCI projects.
+
 Recent Update: I collected 400 observations for notes C4, D4, E4, and also doing nothing. The random forest model fitted (just to test predictability) is able to achieve 73% accuracy! Notes D4 and E4 seem to be hard to distinguish, this could be because recording it was also difficult.
 
-# MusicGen_BCI
-This repository is used for my personal brain computer interface (BCI) mini-project. As of now, the project is still on-going. This README file will be updated as relevant information comes in.
+# ExploringBCI
+This repository is used for my personal brain computer interface (BCI) projects. As of now, I am working on MusicGENBCI, developing a model to make predictions as to which musical note the user is thinking of. the project is still on-going. This README file will be updated as relevant information comes in.
 
 ## Project's Goal
 The project's goal is to develop a traditional machine learning or deep learning model that's able to make predictions on a user's brainwaves as to which musical note they're thinking of. 
